@@ -1,0 +1,7 @@
+server:
+  port: 5555
+
+spring:  data:    mongodb:
+      username: admin
+      password: 6Zf23YYv94qhbBJy
+      database: TakeInDB      uri: System.getenv("TI_DB")

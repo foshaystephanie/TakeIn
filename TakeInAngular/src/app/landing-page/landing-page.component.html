@@ -1,11 +1,15 @@
 <p>landing-page works!</p>
-<div *ngIf="isCollapsed">
-    <button type="button" class="btn btn-secondary" (click)="login()">Login</button>
+<div class="d-flex justify-content-center" *ngIf="isLogin && isRegister">
+    <button type="button" class="btn btn-secondary mr-3" (click)="login()">Login</button>
+    <button type="button" class="btn btn-secondary" (click)="register()">Register</button>
 </div>
 <h1>
     Hello world <i class="fa fa-check"></i>
 </h1>
 <p>testing fonts</p>
-<div *ngIf="!isCollapsed">
+<div class="d-flex justify-content-center" *ngIf="!isLogin">
     <app-login></app-login>
+</div>
+<div *ngIf="!isRegister">
+    <app-registration></app-registration>
 </div>

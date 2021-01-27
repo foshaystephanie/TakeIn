@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  isCollapsed : boolean = true;
+  isLogin : boolean = true;
+  isRegister : boolean = true;
 
   constructor() { }
 
@@ -15,7 +16,11 @@ export class LandingPageComponent implements OnInit {
   }
 
   login(){
-    this.isCollapsed = false;
+    this.isLogin = false;
+  }
+
+  register(){
+    this.isRegister = false;
   }
 
 }
